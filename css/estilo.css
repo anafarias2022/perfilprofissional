@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2? family = Raleway: ital @ 1 & display = swap'); 
+:root{
+    --cor-base-texto: #333333;
+    --cor-vermelho: #8a1616;
+    --cor-vermelho-escuro: #6D0200;
+    --cor-vermelho-borda: #d4312c;
+    --cor-preto: #3B3B3B;
+    --cor-cinza-claro: #EEEEEE;
+    --cor-cinza-escuro: #8B8B8B;
+    --cor-preto-escuro: #272727; 
+    --cor-laranja: #AD4E25;
+    --cor-laranja-escuro: #A23A07;
+    --cor-amarelo: #C87B2B;
+    --cor-amarelo-escuro: #C46F08;
+    --cor-branca: #ffffff; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.nome-profissão{
+    color: var(--cor-vermelho);
+    font-weight: bold;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.nome-profissão-atual{
+    color: var(--cor-vermelho);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.flex{
+    display: flex;
+}
+
+.up{
+    text-transform: uppercase;
+}
+
+#container-titulo{
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+}
+#container-titulo img{
+   height: 35px;
+}
+
+#foto-Ana{
+    align-items: center;
+    height: 650px;
+    overflow: hidden;
+}
+
+#foto-Ana img{
+    border: solid 1px var(--cor-vermelho-borda);
+    width: 100%;
+}
+
+#container-nome{
+    border-bottom: solid 1px var(--cor-vermelho-borda);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo-secao{
+ background-color: var(--cor-cinza-claro);
+ border-bottom: solid 1px var(--cor-vermelho-borda);
+ text-align: center;
+ padding: 1rem 0;
+ font-size: 1rem;
+ border-radius: 50px 50px 0 0;
+
+}
+
+.arejamento{
+    padding: 2rem;
+    border-left: solid 1px var(--cor-vermelho-borda);
+    border-right: solid 1px var(--cor-vermelho-borda);
+    border-radius: 0 0 50px 50px;
+
+}
+
+section{
+    margin: 2rem 15% 2rem 15%;
+}
+
+section p{
+    line-height: 1.7rem;
+}
+
+.arejamento .margem-inferior{
+ margin-bottom: 2rem;    
+}
+
+.dados-experiencia{
+    margin-bottom: 2rem;
+}
+
+.dados-experiencia *{
+    line-height: 1.2rem;
+}
+
+.data-experiencia{
+    color: var(--cor-cinza-escuro);
+}
+
+#container-img-endereço{
+    background-color: var(--cor-vermelho-escuro);
+    min-width: 15%;
+}
+
+#link-endereço{
+    background-color: var(--cor-vermelho);
+    min-width: 15%;
+}
+
+#container-img-telefone{
+    background-color: var(--cor-laranja-escuro);
+    min-width: 15%;
+}
+
+#link-telefone{
+    background-color: var(--cor-laranja);
+    min-width: 15%;
+}
+
+#container-img-email{
+    background-color: var(--cor-amarelo-escuro);
+    min-width: 15%;
+}
+
+#link-email{
+    background-color: var(--cor-amarelo);
+}
+.linha{
+    display: flex;
+    width: 100%;
+    height: 4rem;
+    transition: all ease-in-out .2s;
+}
+
+.linha a{
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    padding-left: 1rem;
+    line-height: 4rem;
+    flex: 6;
+}
+
+footer{
+    width: 100%;
+}
+
+.container-img{
+    align-items: center;
+    display: flex;
+    flex: 0.8;
+    justify-content: center;
+    box-shadow: inset 0 0 10px 5px rgba(0,0,0,0.1);
+}
+
+.container-img img{
+    height: 1.5;
+}
+
+.linha:hover{
+    transform: scale(1.025);
+}
+
+@media screen and (min-width: 960px){
+    #foto-Ana img{
+        border: solid 1px var(--cor-vermelho-borda);
+        width: 25%;
+        border-radius: 50px;
+        margin-left: 15%;
+    }
+    
+    #container-nome{
+        align-items: flex-end;
+        height: 230px;
+        justify-content: flex-end;
+        flex-direction: column;
+        position: absolute;
+        right: 15%;
+        top: 200px;
+    }
+}
